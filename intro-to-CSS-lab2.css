@@ -1,0 +1,131 @@
+.topnav {
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+    margin: 0px 0px;
+}
+.topnav #logo {
+    text-align: center;
+    background-color: red;
+    height: 100%;
+    width: 110px;
+    line-height: 100px;
+    font-size: 40px;
+    color: white;
+    font-family: Verdana;
+    border: hidden;
+    float: left;
+    display: inline-block;
+}
+ .topnav nav {
+    padding-top: 50px;
+    padding-left: 30px;
+    max-width: 450px;
+    border: hidden 1px;
+    margin: 0px 0px;
+    display: inline-block;
+}
+.topnav a {
+    text-decoration: none;
+    font-style: bold;
+    padding-left: 50px;
+    font-size: 12px;
+    text-decoration-line: none;
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+    display: inline;  
+   
+}
+form {
+    display: inline-block;
+    line-height: 30px;
+    align-content: center;
+    padding-right: 150px;
+    padding-left: 110px;
+}
+input {
+    height: 30px;
+    width: 200px;
+    margin-right: 0%;
+}
+button {
+    background-color: red;
+    
+    float: right;
+    border: hidden;
+    height: 30px;
+    width: 30px;
+    margin-top: 1.5px;
+}
+#search-icon {
+    height: 15px;
+    width: 15px;
+    padding: 1px;
+    
+    background-color: transparent;
+    border: hidden;
+    filter: invert(100%);
+
+
+}
+.cart {
+    display: inline;
+    font-size: 12px;
+    float: right;
+    text-align: right;
+    height: 100%;
+    padding-top: 25px;
+    margin-right: 10px;
+    padding-left: 0px;
+    
+}
+
+.cart-icon {
+    height: 18px;
+    filter: invert(100%);
+    padding-left: 5px;
+    vertical-align: text-bottom;
+}
+
+.red {
+    background-color: red;
+    border: solid black 1px;
+    height: 50px;
+    width: 50px;
+    float: left;
+    border-top-left-radius: 100%;
+}
+.yellow {
+    background-color: yellow;
+    border: solid black 1px;
+    height: 50px;
+    width: 50px;
+    float:right;
+    border-top-right-radius: 100%;
+}
+.blue {
+    background-color: blue;
+    border: solid black 1px;
+    height: 50px;
+    width: 50px;
+    float: left;
+    border-bottom-left-radius: 100%
+}
+.green {
+    background-color: green;
+    border: solid black 1px;
+    height: 50px;
+    width: 50px;
+    float: right;
+    border-bottom-right-radius: 100%
+}
+
+.circle {
+    margin-left: 50px;
+    margin-top: 100px;
+    height: 110px;
+    width: 104px;
+}

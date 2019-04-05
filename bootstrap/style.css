@@ -1,0 +1,38 @@
+.blockquote-footer {
+    color: white;
+}
+.carousel-item {
+    height: 500px;
+    width: 500px;     
+}
+.carousel {
+    margin: auto;
+}
+.form {
+    border-width: 5px;
+    border-style: double;
+    border-color: brown;
+    width: 400px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.paneltext {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.card {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.container {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.page2 {
+    height: 600px;
+}
