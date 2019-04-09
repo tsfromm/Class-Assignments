@@ -15,13 +15,9 @@ function getHand() {
     function player1choice () {
         player1.hand = prompt("Choose rock paper or scissors");
     }  
-    function clearScores()  {
-        player1.score = 0
-        player2.score = 0
-        document.getElementById("game").innerHTML= "Your score is ", player1.score;
-        document.getElementById("game").innerHTML= "Dolores' score is ", player2.score;
-        document.getElementById("game").innerHTML= "It doesn't look like anything to me... End of game. Play again."
-    }
+
+    document.getElementById("gameButton") //Play Game Button
+    .addEventListener ("click",function(){playRound(player1, player2)})
     
     function playRound(player1, player2) {
         player1choice(), player2.hand = getHand();
@@ -46,27 +42,4 @@ function getHand() {
             {console.log(player1.name+" played "+ player1.hand+" and "+player2.name+" played "+ player2.hand+" ...It's a tie!"),
             document.getElementById("round").innerHTML="You played "+ player1.hand+" and Dolores played "+ player2.hand+" ...It's a tie! You-"+player1.score+" Dolores-"+player2.score;
             } //end else
-  if (player1.score === 3) {
-        window.alert("You win!!!")
-        clearScores()
-        } //end if
-    else if (player2.score === 3) {
-        window.alert(player2.name+" wins the game. The maze wasn't meant for you.")
-        clearScores()
-        }  //end else if
 } //end playRound
-
-
-  
-
-       
-
-
-
-    
-       
-
-
-
-
-
