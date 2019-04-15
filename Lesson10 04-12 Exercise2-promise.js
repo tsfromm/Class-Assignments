@@ -17,10 +17,12 @@
     // A search box that filters the photos by title as the user types
     // A back link to the user homepage
 
-let userName = document.querySelector('input#userName');
-let submit = document.querySelector('#submit');
-submit.addEventListener('click', event => {
-    //executor
+let userName = $('input#username');
+let submit = $('#submit');
+submit.click(event => {
+    findUser();
+    getUserPosts();
+    getAlbumPosts();
 })
 function findUser(userName) {
     return new Promise(function(resolve, reject) {
@@ -34,7 +36,7 @@ function findUser(userName) {
 
 function getUserPosts(user) {
     return new Promise (function(resolve, reject){
-        $.get("http://jsonplaceholder.typicode.com/posts?userId="+user.Id,
+        $.get("http://jsonplaceholder.typicode.com/posts?userId="+user.id,
         function(posts){
             resolve(posts);
         });//function posts
@@ -42,8 +44,8 @@ function getUserPosts(user) {
 };//function gerUserPosts
 
 function getAlbumPosts(user) {
-    return new Promise (function(resolve,reject){
-        $.get("http://jsonplaceholder.typicode.com/albums?userId=")+user.Id,
+    return new Promise (function(resolve, reject){
+        $.get("http://jsonplaceholder.typicode.com/albums?userId=")+user.id,
         function(albums){
             resolve(albums);
         };//function albums
