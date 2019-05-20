@@ -41,8 +41,18 @@ public class May20TitusLab {
 
         //step4
         Integer n = 64;
-        System.out.println((n>>1)+" is 64 shifted right 1 bit.");
-        System.out.println((n<<1)+" is 64 shifted left 1 bit.");
+        System.out.println((n>>1)+" is 64 shifted right 1 bit, which is equal to 64/2.");
+        System.out.println((n<<1)+" is 64 shifted left 1 bit, which is equal to 64*2.");
+        Integer m = 40;
+        System.out.println((m>>1)+" is 40 shifted right 1 bit, which is equal to 40/2.");
+        System.out.println((m<<1)+" is 40 shifted left 1 bit, which is equal to 40*2.");
+        System.out.println((m>>2)+" is 40 shifted right 1 bit, which is equal to 40/4.");
+        System.out.println((m<<2)+" is 40 shifted left 1 bit, which is equal to 40*4.");
+        Integer o = 45;
+        System.out.println((o>>1)+" is 45 shifted right 1 bit.");
+        System.out.println((o<<1)+" is 45 shifted left 1 bit.");
+
+
 
 
 
