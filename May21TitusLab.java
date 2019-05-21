@@ -1,4 +1,3 @@
-import java.util.Collections;
 import java.util.Scanner;
 
 public class May21TitusLab {
@@ -133,20 +132,15 @@ public class May21TitusLab {
 //        for (int item : myArray) {
 //            if(item == b) break;
 //
-//            if(item%2 ==0) {
+//            if(item%2 !=0) {
 //                continue;
 //            }
-//            else if (item%2!=0) {
+//            else if (item%2 ==0) {
 //                System.out.println(item);
 //            }
 //        }
         //-------------------------------------------------------
         //-----------------Step 5 Part 2-------------------------
-//       Now change the method signature to return an int.
-//       * change the method as follows:
-//          - if the number is odd, print it.
-//          - if the number is even, add it to a running total of even numbers.
-//          - if the number is equal to the number passed in the method, return the running total sum from the method.
         int[] myArray = new int[30];
         int sum=0;
         for (int i = 0; i < myArray.length; i++) {
@@ -162,13 +156,11 @@ public class May21TitusLab {
                 System.out.println(item);
             }
             else if(item%2 ==0) {
-//                System.out.println(sum += item);
+                //System.out.println(sum += item);
                 //System.out.println(String.format("The previous sum %d plus the current value %d equals %d", sum, item, sum+item));
                 sum+=item;
             }
-
         } return sum;
         //-------------------------------------------------------
-
 } //end stepFive method
 } //end class
